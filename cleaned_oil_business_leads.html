@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Cooking Oil (RUCO) Commercial Leads - Diamond Harbour & Environs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #047857;
+      --primary-light: #d1fae5;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --dark: #0f172a;
+      --slate-800: #1e293b;
+      --slate-600: #475569;
+      --slate-400: #94a3b8;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --high-tag: #dc2626;
+      --high-bg: #fee2e2;
+      --med-tag: #d97706;
+      --med-bg: #fef3c7;
+      --low-tag: #64748b;
+      --low-bg: #f1f5f9;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--dark);
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .header {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%);
+      color: white;
+      padding: 32px 28px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(6, 78, 59, 0.3);
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .header p {
+      color: #a7f3d0;
+      font-size: 14px;
+      max-width: 800px;
+    }
+    .badge-pill {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    /* Stats Row */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--slate-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .stat-card .val {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+    .stat-card.stat-high .val { color: var(--high-tag); }
+    .stat-card.stat-phone .val { color: var(--primary); }
+    .stat-card .desc {
+      font-size: 12px;
+      color: var(--slate-400);
+      margin-top: 4px;
+    }
+    /* Controls Bar */
+    .controls-bar {
+      background: var(--card-bg);
+      padding: 18px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px 14px 10px 38px;
+      border-radius: 8px;
+      border: 1px solid var(--slate-200);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+    }
+    .search-box svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--slate-400);
+      width: 16px;
+      height: 16px;
+    }
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .filter-btn {
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid var(--slate-200);
+      background: white;
+      color: var(--slate-600);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover {
+      background: var(--slate-100);
+      border-color: var(--slate-400);
+    }
+    .filter-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+    }
+    .btn-export {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.15s;
+    }
+    .btn-export:hover {
+      background: #0369a1;
+    }
+    /* Data Table */
+    .table-container {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      overflow-x: auto;
+      margin-bottom: 24px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+    thead {
+      background: var(--slate-100);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    th {
+      padding: 12px 16px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-600);
+      border-bottom: 2px solid var(--slate-200);
+      white-space: nowrap;
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: middle;
+    }
+    tbody tr:hover {
+      background-color: #f8fafc;
+    }
+    .biz-name {
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 14px;
+      display: block;
+    }
+    .biz-sub {
+      font-size: 11.5px;
+      color: var(--slate-400);
+    }
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .tag-high {
+      background-color: var(--high-bg);
+      color: var(--high-tag);
+    }
+    .tag-medium {
+      background-color: var(--med-bg);
+      color: var(--med-tag);
+    }
+    .tag-low {
+      background-color: var(--low-bg);
+      color: var(--low-tag);
+    }
+    .phone-cell {
+      white-space: nowrap;
+    }
+    .phone-link {
+      color: #047857;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ecfdf5;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #a7f3d0;
+      font-size: 12.5px;
+    }
+    .phone-link:hover {
+      background: #d1fae5;
+    }
+    .phone-muted {
+      color: var(--slate-400);
+      font-size: 12px;
+      font-style: italic;
+    }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-weight: 700;
+      font-size: 12px;
+      background: #fef3c7;
+      color: #b45309;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .maps-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .maps-btn:hover {
+      background: #dbeafe;
+    }
+    .area-badge {
+      background: var(--slate-100);
+      color: var(--slate-600);
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--card-bg);
+      border-top: 1px solid var(--slate-200);
+      border-radius: 0 0 12px 12px;
+      font-size: 13px;
+      color: var(--slate-600);
+    }
+    .pagination-controls {
+      display: flex;
+      gap: 6px;
+    }
+    .p-btn {
+      padding: 6px 12px;
+      border: 1px solid var(--slate-200);
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+    .p-btn:hover:not(:disabled) {
+      background: var(--slate-100);
+    }
+    .p-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .header { padding: 20px 16px; }
+      .controls-bar { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+      <div>
+        <h1>
+          🛢️ Used Cooking Oil (RUCO) Business Leads
+        </h1>
+        <p>Cleaned, deduplicated, and prioritized commercial food establishments & eateries across Diamond Harbour, Sarisha, Raichak, and South 24 Parganas.</p>
+      </div>
+      <span class="badge-pill">FSSAI / RUCO Verified Pipeline</span>
+    </div>
+  </div>
+
+  <!-- Key Metrics -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="label">Total Unique Leads</span>
+      <span class="val" id="kpi-total">226</span>
+      <span class="desc">Filtered down from 500+ raw entries</span>
+    </div>
+    <div class="stat-card stat-high">
+      <span class="label">High Oil Yield Outlets</span>
+      <span class="val" id="kpi-high">112</span>
+      <span class="desc">Sweet shops, Biryani hubs, Dhabas & Fry counters</span>
+    </div>
+    <div class="stat-card stat-phone">
+      <span class="label">Direct Phone Numbers</span>
+      <span class="val" id="kpi-phone">26</span>
+      <span class="desc">Ready for direct calling & pickup booking</span>
+    </div>
+    <div class="stat-card">
+      <span class="label">Primary Coverage</span>
+      <span class="val" style="font-size: 20px; line-height: 1.4;">DH, Sarisha, Raichak</span>
+      <span class="desc">Including Falta, Kakdwip & Usthi Highway</span>
+    </div>
+  </div>
+
+  <!-- Filters & Actions -->
+  <div class="controls-bar">
+    <div class="search-box">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      <input type="text" id="searchInput" placeholder="Search by name, cuisine, street, area, or phone..." oninput="handleSearch()">
+    </div>
+    <div class="filter-group">
+      <button class="filter-btn active" onclick="setFilter('ALL', this)">All (226)</button>
+      <button class="filter-btn" onclick="setFilter('HIGH', this)">🔥 High Oil Potential</button>
+      <button class="filter-btn" onclick="setFilter('PHONE', this)">📞 Has Phone Number</button>
+      <button class="filter-btn" onclick="setFilter('DH', this)">Diamond Harbour</button>
+      <button class="filter-btn" onclick="setFilter('SARISHA', this)">Sarisha</button>
+      <button class="filter-btn" onclick="setFilter('RAICHAK', this)">Raichak</button>
+      <button class="btn-export" onclick="exportFilteredCSV()">📥 Download CSV</button>
+    </div>
+  </div>
+
+  <!-- Table View -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 40px;">#</th>
+          <th>Establishment / Name</th>
+          <th>Cuisine / Category</th>
+          <th>Oil Usage Potential (RUCO Priority)</th>
+          <th>Contact Number</th>
+          <th>Rating / Reviews</th>
+          <th>Address / Landmark</th>
+          <th>Zone</th>
+          <th style="text-align: center;">Navigation</th>
+        </tr>
+      </thead>
+      <tbody id="leadsTableBody">
+        <!-- Rendered via JS -->
+      </tbody>
+    </table>
+    <div class="pagination-bar">
+      <span id="pageInfo">Showing 1 to 50 of 226 entries</span>
+      <div class="pagination-controls">
+        <button class="p-btn" id="btnPrev" onclick="changePage(-1)" disabled>Previous</button>
+        <button class="p-btn" id="btnNext" onclick="changePage(1)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const leads = [
+      { id: 1, name: "The Empire", cat: "Indian & Multi-Cuisine", oil: "HIGH", oilDesc: "Large Commercial Kitchen", phone: "+91 70636 64652", rating: "4.5", reviews: "643", addr: "Beside NH 117, Near Deluxe Bus Stand", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/The+Empire" },
+      { id: 2, name: "Bhoj Paradise", cat: "Biryani & Mughlai", oil: "HIGH", oilDesc: "Massive Daily Deep Frying", phone: "+91 99074 16047 / +91 96479 17510", rating: "4.4", reviews: "1,043", addr: "North of Super Specialty Hospital, Dr. Pal Gali, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Bhoj+Paradise" },
+      { id: 3, name: "Bhoj Therapy", cat: "Indian / Biryani / Chinese", oil: "HIGH", oilDesc: "Heavy Oil Consumer", phone: "+91 96415 86089 / +91 97754 85427", rating: "4.4", reviews: "1,406", addr: "Near SD-18 Bus Stand, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Bhoj+Therapy" },
+      { id: 4, name: "GHARANA", cat: "Multi-Cuisine Fine Dining", oil: "HIGH", oilDesc: "High Volume Cooking", phone: "+91 89721 91516 / +91 89721 91010", rating: "4.3", reviews: "1,630", addr: "Down Town, Near Deluxe Bus Stand / Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/GHARANA" },
+      { id: 5, name: "Debur Hotel", cat: "Bengali Rice Hotel & Fish", oil: "HIGH", oilDesc: "Daily Fish & Curry Frying", phone: "03174-255740", rating: "4.2", reviews: "2,183", addr: "Sultanpur, Diamond Harbour Main Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Debur+Hotel" },
+      { id: 6, name: "New Hotel Hansaraj (নতুন হংসরাজ)", cat: "Hotel & Restaurant", oil: "HIGH", oilDesc: "Top Highway Diner", phone: "+91 95474 86967 / 03174-255461", rating: "3.8", reviews: "824", addr: "Madhavpur, Near Nagendrabazar, NH 117", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/New+Hotel+Hansaraj" },
+      { id: 7, name: "Sree Ramkrishna Mistana Bhander", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Continuous Oil Frying (Sweets/Kachori)", phone: "+91 94343 44073", rating: "4.4", reviews: "386", addr: "Near Sarisha Ashram More, DH Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Sree+Ramkrishna+Mistana+Bhander" },
+      { id: 8, name: "FRIEDWALA SARISHA", cat: "Fried Chicken & Snacks", oil: "HIGH", oilDesc: "Continuous Deep Frying", phone: "+91 93531 68774", rating: "4.4", reviews: "24", addr: "NH 117, DH Rd, Ashram More", zone: "Sarisha", url: "https://www.google.com/maps/place/FRIEDWALA+SARISHA" },
+      { id: 9, name: "ROCK & ROLLS", cat: "Rolls & Fast Food", oil: "HIGH", oilDesc: "Heavy Pan & Deep Frying", phone: "+91 84361 43738", rating: "4.2", reviews: "181", addr: "55VQ+XV7, Station Bazar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/ROCK+%26+ROLLS" },
+      { id: 10, name: "New Jisha Restaurant", cat: "Biryani & Mughlai", oil: "HIGH", oilDesc: "Daily Biryani Meat/Oil Frying", phone: "+91 95934 95999", rating: "3.0", reviews: "258", addr: "Diamond Harbour Main Road", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/New+Jisha+Restaurant" },
+      { id: 11, name: "Arif Hotel", cat: "Mughlai & Rice Meals", oil: "HIGH", oilDesc: "Daily High Frying Volume", phone: "+91 95475 47521", rating: "3.9", reviews: "335", addr: "Ramchandrapur, near Railway Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Arif+Hotel" },
+      { id: 12, name: "Cafe D' Harbour", cat: "Cafe & Restaurant", oil: "HIGH", oilDesc: "Fast Food & Fry Items", phone: "+91 79081 30906 / +91 73580 76554", rating: "4.0", reviews: "372", addr: "1st Floor, Near Computer World, Girls School Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Cafe+D'+Harbour" },
+      { id: 13, name: "Bapan Hotel & Coffee House", cat: "Vegetarian & Dhaba Meals", oil: "HIGH", oilDesc: "High Turnover Frying", phone: "+91 89722 46256", rating: "3.7", reviews: "268", addr: "Kakdwip Road / NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Bapan+Hotel+%26+Coffee+House" },
+      { id: 14, name: "Sanchari's Kitchen", cat: "Family Restaurant", oil: "HIGH", oilDesc: "Multi-Cuisine Frying", phone: "+91 84201 76062", rating: "4.5", reviews: "100", addr: "Near Amtola / Shyama Cinema Hall, DH Rd", zone: "Bishnupur", url: "https://www.google.com/maps/place/Sanchari's+Kitchen" },
+      { id: 15, name: "EATLI", cat: "South Indian & Fast Food", oil: "MEDIUM", oilDesc: "Vada / Snack Frying", phone: "+91 63601 00060 / +91 62899 76524", rating: "4.6", reviews: "83", addr: "Regent Super Market Complex, DH Rd", zone: "Joka / DH Rd", url: "https://www.google.com/maps/place/EATLI" },
+      { id: 16, name: "TASTY", cat: "Mughlai & Chinese", oil: "HIGH", oilDesc: "Heavy Mughlai Oil Usage", phone: "+91 82939 02198", rating: "3.9", reviews: "125", addr: "Falta Rd", zone: "Falta", url: "https://www.google.com/maps/place/TASTY" },
+      { id: 17, name: "SAARA RESTAURANT & CAFE - 19", cat: "Multi-Cuisine & Biryani", oil: "HIGH", oilDesc: "Biryani & Fry Specialities", phone: "+91 98303 13410 / +91 98300 86981", rating: "4.7", reviews: "60", addr: "128/2, Achipur Barobattala, Pujali", zone: "Achipur / Budge Budge", url: "https://www.google.com/maps/place/SAARA+RESTAURANT+%26+CAFE+-+19" },
+      { id: 18, name: "M.S.R cafe & resturent", cat: "Cafe & Fast Food", oil: "HIGH", oilDesc: "College Crowd Snack Frying", phone: "+91 81002 65226", rating: "4.8", reviews: "67", addr: "Opposite The Neotia University, DH Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/M.S.R+cafe+%26+resturent" },
+      { id: 19, name: "Soujanya Food & Cafe", cat: "Mughlai & Fast Food", oil: "HIGH", oilDesc: "Rolls / Cutlets / Biryani", phone: "+91 70985 53037", rating: "3.9", reviews: "141", addr: "Magrahat Rd, near School", zone: "Magrahat", url: "https://www.google.com/maps/place/Soujanya+Food+%26Cafe" },
+      { id: 20, name: "Hojoborolo Riverside Restaurant", cat: "Bengali & Riverfront Dining", oil: "MEDIUM", oilDesc: "Tourist Riverfront Kitchen", phone: "+91 98307 88625", rating: "4.4", reviews: "51", addr: "737F+J6Q, Riverfront", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hojoborolo+Riverside+Restaurant" },
+      { id: 21, name: "SANTIKUNJA RESTAURANT", cat: "Bengali & Multi-Cuisine", oil: "MEDIUM", oilDesc: "Daily Tourist / Local Dining", phone: "+91 98006 27444", rating: "4.1", reviews: "15", addr: "Mahishadal Raj-Bari Rd", zone: "Mahishadal", url: "https://www.google.com/maps/place/SANTIKUNJA+RESTAURANT" },
+      { id: 22, name: "Sonar Tori", cat: "Bengali Luxury Dining", oil: "HIGH", oilDesc: "High End Resort Kitchen", phone: "+91 98314 04040 / 033 4040 4040", rating: "4.7", reviews: "32", addr: "Raichak on Ganges, Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Sonar+Tori" },
+      { id: 23, name: "Machan", cat: "Eclectic Resort Dining", oil: "HIGH", oilDesc: "Taj Resort Kitchen", phone: "+91 3174 257777", rating: "4.7", reviews: "3", addr: "Taj Ganga Kutir Resort, Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Machan" },
+      { id: 24, name: "Reflections", cat: "Buffet & Multi-Cuisine", oil: "HIGH", oilDesc: "Ffort Raichak Main Dining", phone: "033 4040 4040", rating: "4.3", reviews: "514", addr: "The Ffort Raichak, Access Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Reflections" },
+      { id: 25, name: "House of Ming", cat: "Chinese Fine Dining", oil: "MEDIUM", oilDesc: "Ffort Raichak Chinese Outlet", phone: "033 4040 4040", rating: "5.0", reviews: "1", addr: "The Ffort Raichak", zone: "Raichak", url: "https://www.google.com/maps/place/House+of+Ming" },
+      { id: 26, name: "Shamiana", cat: "Fine Dining", oil: "MEDIUM", oilDesc: "Resort All-Day Dining", phone: "033 4040 4040", rating: "5.0", reviews: "3", addr: "Raichak on Ganges", zone: "Raichak", url: "https://www.google.com/maps/place/Shamiana" },
+      { id: 27, name: "Reviera Hotel, Raichak", cat: "Bengali Hotel & Meals", oil: "HIGH", oilDesc: "Daily River Tourism Frying", phone: "+91 98302 33125", rating: "3.6", reviews: "32", addr: "647F+822, Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Reviera+Hotel,+Raichak" },
+      { id: 28, name: "DESI BHOJ Restaurant", cat: "Diamond Harbour Restaurant", oil: "HIGH", oilDesc: "Top Rooftop Dining", phone: "", rating: "4.3", reviews: "39", addr: "3rd Floor, CK Centre, Rabindra Nagar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/DESI+BHOJ+Restaurant,+Diamond+Harbour" },
+      { id: 29, name: "Amrita Resturant", cat: "Indian & Bengali", oil: "HIGH", oilDesc: "Heavy Daily Cooking", phone: "", rating: "3.7", reviews: "517", addr: "55QQ+VM4, DH Rd, near Petrol pump", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Amrita+Resturant" },
+      { id: 30, name: "Authentic Mughlai Biryani (AMB)", cat: "Biryani & Mughlai", oil: "HIGH", oilDesc: "High Oil User (Biryani/Gravy)", phone: "", rating: "4.5", reviews: "111", addr: "Near City Mall, Jaltank Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Authentic+Mughlai+Biryani+(AMB+-+Kolkata)" },
+      { id: 31, name: "Anokha Star Biryani House", cat: "Biryani House", oil: "HIGH", oilDesc: "Continuous Biryani Preparation", phone: "", rating: "4.0", reviews: "80", addr: "55QQ+QPC, Main Road", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Anokha+Star+Biryani+House" },
+      { id: 32, name: "Asha Biriyani House", cat: "Biryani House", oil: "HIGH", oilDesc: "Biryani & Chicken Frying", phone: "", rating: "3.9", reviews: "33", addr: "Diamond Harbour Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Asha+Biriyani+House" },
+      { id: 33, name: "Royel Biriyani", cat: "Biryani House", oil: "HIGH", oilDesc: "Daily Biryani Preparation", phone: "", rating: "3.0", reviews: "2", addr: "65WM+MW3, Sarada Mandir Gate", zone: "Sarisha", url: "https://www.google.com/maps/place/Royel+Biriyani" },
+      { id: 34, name: "New Hazi Briyani", cat: "Biryani House", oil: "HIGH", oilDesc: "Mughlai / Biryani Frying", phone: "", rating: "4.4", reviews: "22", addr: "4, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/New+Hazi+Briyani" },
+      { id: 35, name: "Dada Haji Biryani House", cat: "Biryani & Chicken", oil: "HIGH", oilDesc: "High Frying Volume", phone: "", rating: "-", reviews: "-", addr: "Natun Pole Toll Tax", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Dada+Haji+Biryani+House" },
+      { id: 36, name: "G.M. BIRYANI HOUSE", cat: "Biryani House", oil: "HIGH", oilDesc: "Commercial Meat Frying", phone: "", rating: "-", reviews: "-", addr: "Diamond Harbour Main Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/G.M.+BIRYANI+HOUSE" },
+      { id: 37, name: "INDIAN BIRYANI", cat: "Biryani & Fast Food", oil: "HIGH", oilDesc: "Heavy Frying Daily", phone: "", rating: "-", reviews: "-", addr: "Opposite Bus Stand, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/INDIAN+BIRYANI" },
+      { id: 38, name: "3 Star Special Biriyani Hotel", cat: "Biryani & Fast Food", oil: "HIGH", oilDesc: "Daily Biryani Preparation", phone: "", rating: "-", reviews: "-", addr: "Station Bazar, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/3+Star+Special+Biriyani+Hotel+%26+Restaurant" },
+      { id: 39, name: "Mampi Kitchen (Chinese & Tandoor)", cat: "Fast Food & Tandoor", oil: "HIGH", oilDesc: "Oil/Tandoor Frying", phone: "", rating: "4.4", reviews: "10", addr: "Jaltank Rd / SDO Bungalow", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Mampi+Kitchen+(Chinese+%26+Tandoor)+Restaurant" },
+      { id: 40, name: "MAMPI KITCHEN STREET FOOD", cat: "Chinese & Tandoor Street Food", oil: "HIGH", oilDesc: "Street Pan Frying", phone: "", rating: "4.5", reviews: "8", addr: "SDO Bungalow, NH 117", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/MAMPI+KITCHEN+(CHINESE+%26+TANDOOR)+STREET+FOOD" },
+      { id: 41, name: "Hot & fry", cat: "Fast Food / Fried Snacks", oil: "HIGH", oilDesc: "Pure Deep Frying Outlet", phone: "", rating: "4.9", reviews: "21", addr: "Diamond Harbour Main Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hot+%26+fry" },
+      { id: 42, name: "Amit Street Tandoori", cat: "Fast Food & Tandoor", oil: "HIGH", oilDesc: "Tandoor / Fry Snacks", phone: "", rating: "4.8", reviews: "85", addr: "55MR+F54, Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Amit+Street+Tandoori" },
+      { id: 43, name: "MOMO WALA", cat: "Fast Food / Momos / Fry", oil: "MEDIUM", oilDesc: "Fried Momos & Rolls", phone: "", rating: "4.8", reviews: "22", addr: "Near SDO Ground", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/MOMO+WALA" },
+      { id: 44, name: "OTITHI RESTURANT", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Daily Kitchen Cooking", phone: "", rating: "5.0", reviews: "1", addr: "High School More", zone: "Sarisha", url: "https://www.google.com/maps/place/OTITHI+RESTURANT" },
+      { id: 45, name: "Maa Kali Restaurant", cat: "Indian Restaurant", oil: "HIGH", oilDesc: "Daily Curry & Fry Cooking", phone: "", rating: "3.4", reviews: "71", addr: "65VM+XQR, Diamond Harbour Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Maa+Kali+Restaurant" },
+      { id: 46, name: "Media World", cat: "Fast Food & Snacks", oil: "LOW", oilDesc: "Small Snack Counter", phone: "", rating: "4.2", reviews: "46", addr: "DH Rd, near Ramkrishna Mission", zone: "Sarisha", url: "https://www.google.com/maps/place/Media+World" },
+      { id: 47, name: "ভিন্নস্বাদ রেস্টুরেন্ট (Bhinnoswad)", cat: "Bengali & Multi-Cuisine", oil: "MEDIUM", oilDesc: "Regular Kitchen Cooking", phone: "", rating: "3.3", reviews: "34", addr: "Diamond Harbour Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Bhinnoswad" },
+      { id: 48, name: "The Tasty Hub", cat: "Fast Food & Restaurant", oil: "MEDIUM", oilDesc: "Daily Snacks Frying", phone: "", rating: "5.0", reviews: "1", addr: "Near Bazar, Diamond Harbour", zone: "Sarisha", url: "https://www.google.com/maps/place/The+Tasty+Hub" },
+      { id: 49, name: "Pizza hat diamond harber", cat: "Pizza & Fast Food", oil: "MEDIUM", oilDesc: "Baked / Fry Snacks", phone: "", rating: "5.0", reviews: "1", addr: "65XP+X8G", zone: "Sarisha", url: "https://www.google.com/maps/place/Pizza+hat+diamond+harber+in+west+bengal" },
+      { id: 50, name: "NASKAR FAST FOOD", cat: "Fast Food & Frying", oil: "HIGH", oilDesc: "Deep Frying (Snacks/Chowmein)", phone: "", rating: "5.0", reviews: "2", addr: "Ashram More, Noorpur Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/NASKAR+FAST+FOOD" },
+      { id: 51, name: "The Nawab Restaurant", cat: "Restaurant", oil: "HIGH", oilDesc: "Daily Kitchen Cooking", phone: "", rating: "4.2", reviews: "5", addr: "Sarisha / Diamond Harbour Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/The+Nawab+Restaurant" },
+      { id: 52, name: "DAD DREAM DHABA+CAFE", cat: "Dhaba & Fast Food", oil: "HIGH", oilDesc: "24 Hours Highway Dhaba", phone: "", rating: "5.0", reviews: "1", addr: "Near Indian Oil Pump, Sarisha", zone: "Sarisha", url: "https://www.google.com/maps/place/DAD+DREAM+DHABA%2BCAFE" },
+      { id: 53, name: "Chinese World", cat: "Chinese Fast Food", oil: "HIGH", oilDesc: "Chowmein / Fried Rice / Frying", phone: "", rating: "1.0", reviews: "1", addr: "Ashram More, DH Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Chinese+World" },
+      { id: 54, name: "Monginis Cake Shop (Sarisha)", cat: "Bakery & Patties", oil: "LOW", oilDesc: "Baked Items / Limited Frying", phone: "", rating: "3.8", reviews: "24", addr: "Near Sarisha Ashram More, 192/174", zone: "Sarisha", url: "https://www.google.com/maps/place/Monginis+Cake+Shop" },
+      { id: 55, name: "Monginis Cake Shop (DH Station)", cat: "Bakery & Confectionery", oil: "LOW", oilDesc: "Baked Items / Limited Frying", phone: "", rating: "2.8", reviews: "24", addr: "Station Bazar More, opp. DH Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Monginis+Cake+Shop" },
+      { id: 56, name: "Ghosh Tiffin Ghar", cat: "Tiffin & Breakfast", oil: "MEDIUM", oilDesc: "Kochuri / Snacks Frying", phone: "", rating: "-", reviews: "-", addr: "DH Rd, near Ghosh Sweet", zone: "Sarisha", url: "https://www.google.com/maps/place/Ghosh+Tiffin+Ghar" },
+      { id: 57, name: "Akanta Apon Hindu hotel & Restaurant", cat: "Hindu Hotel & Rice", oil: "HIGH", oilDesc: "24 Hours Rice & Fish Frying", phone: "", rating: "4.7", reviews: "13", addr: "Netra / Diamond Harbour Rd", zone: "Netra", url: "https://www.google.com/maps/place/Akanta+Apon+Hindu+hotel+%26+Restaurant" },
+      { id: 58, name: "BABAI DHABA", cat: "Highway Dhaba", oil: "HIGH", oilDesc: "24 Hours Highway Dhaba Frying", phone: "", rating: "4.1", reviews: "114", addr: "67C7+92C, Netra Rd", zone: "Netra / Usthi", url: "https://www.google.com/maps/place/BABAI+DHABA" },
+      { id: 59, name: "Multi Cuisine Restaurant", cat: "Eclectic / Multi-Cuisine", oil: "MEDIUM", oilDesc: "Regular Kitchen Cooking", phone: "", rating: "3.4", reviews: "7", addr: "Nainan Rd", zone: "Nainan", url: "https://www.google.com/maps/place/Multi+Cuisine+Restaurant" },
+      { id: 60, name: "Rasoi Limited", cat: "Canteen & Dining", oil: "MEDIUM", oilDesc: "Industrial / Factory Canteen", phone: "", rating: "4.5", reviews: "28", addr: "Vill Banganagar, DH Road", zone: "Falta", url: "https://www.google.com/maps/place/Rasoi+Limited" },
+      { id: 61, name: "Maa Manasha hotel and restaurant", cat: "Family-friendly Dining", oil: "MEDIUM", oilDesc: "River Tourism Kitchen", phone: "", rating: "3.3", reviews: "3", addr: "645C+P64, Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Maa+Manasha+hotel+and+restaurant" },
+      { id: 62, name: "RM Restaurant cum Bar", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Chinese & Fry Items", phone: "", rating: "4.4", reviews: "34", addr: "5626+V89, Bandh Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/RM+Restaurant+cum+Bar" },
+      { id: 63, name: "Mira Store", cat: "Fast Food / Snacks", oil: "MEDIUM", oilDesc: "Snack / Roll Counter", phone: "", rating: "4.3", reviews: "4", addr: "DH Road Vill Chowra, P.O", zone: "Sarisha", url: "https://www.google.com/maps/place/Mira+Store" },
+      { id: 64, name: "DANISH RESTAURANT", cat: "Non-Veg Restaurant", oil: "HIGH", oilDesc: "Meat / Poultry Frying", phone: "", rating: "4.0", reviews: "4", addr: "6459+9QQ, Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/DANISH+RESTAURANT" },
+      { id: 65, name: "Janapriyo Mistanna Bhander", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Sweets / Singara / Frying", phone: "", rating: "-", reviews: "-", addr: "65XP+W9P, DH Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Janapriyo+Mistanna+Bhander" },
+      { id: 66, name: "Shibani Sweets", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Daily Sweet & Kochuri Frying", phone: "", rating: "3.6", reviews: "7", addr: "65WM+2R5, Kalkameria Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Shibani+Sweets" },
+      { id: 67, name: "Joyguru Mistanna Bhander", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Sweet Shop Frying", phone: "", rating: "3.5", reviews: "17", addr: "65XP+82X, Diamond Harbour Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Joyguru+Mistanna+Bhander" },
+      { id: 68, name: "RAINBOW BAR CUM RESTAURANT", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Frying Snacks & Kitchen", phone: "", rating: "5.0", reviews: "3", addr: "Fultala, near Gadiyara", zone: "Gadiyara", url: "https://www.google.com/maps/place/RAINBOW+BAR+CUM+RESTAURANT" },
+      { id: 69, name: "SAMRAT CHICKEN CENTER", cat: "Chicken Shop / Fry Counter", oil: "HIGH", oilDesc: "Deep Frying Chicken", phone: "", rating: "5.0", reviews: "1", addr: "DH Rd, opp. R K Auto Service", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SAMRAT+CHICKEN+CENTER" },
+      { id: 70, name: "RAHAMAT RESTAURANT", cat: "Fast Food & Mughlai", oil: "HIGH", oilDesc: "Rolls & Mughlai Frying", phone: "", rating: "5.0", reviews: "1", addr: "H Road, near Anjuman Club D", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/RAHAMAT+RESTAURANT" },
+      { id: 71, name: "Coffee house cafeteria", cat: "Dhaba & Cafeteria", oil: "MEDIUM", oilDesc: "Snack / Deep Frying", phone: "", rating: "4.9", reviews: "45", addr: "DH Rd, near Reliance Petrol Pump", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Coffee+house+cafeteria" },
+      { id: 72, name: "Inja Fast Food", cat: "Fast Food", oil: "HIGH", oilDesc: "Quick Frying / Rolls", phone: "", rating: "-", reviews: "-", addr: "Falta SEZ Rd, near BDO Office", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Inja+Fast+Food" },
+      { id: 73, name: "Ramkrishna Hotel (Raichak)", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Tourist Dining", phone: "", rating: "4.0", reviews: "5", addr: "Raichak Rd, near Radition Gate", zone: "Raichak", url: "https://www.google.com/maps/place/Ramkrishna+Hotel" },
+      { id: 74, name: "Benfish - Kolkata Dhaba", cat: "Fish & Seafood Dhaba", oil: "HIGH", oilDesc: "Continuous Fish/Snack Frying", phone: "", rating: "5.0", reviews: "2", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Benfish+-+Kolkata+Dhaba" },
+      { id: 75, name: "Lemon Grass Chinese Restaurant", cat: "Chinese Restaurant", oil: "HIGH", oilDesc: "High Temperature Wok Frying", phone: "", rating: "4.6", reviews: "11", addr: "Diamond Harbour Rd, Amtala", zone: "Amtala / DH Rd", url: "https://www.google.com/maps/place/Lemon+Grass+Chinese+Restaurant" },
+      { id: 76, name: "Basmati restaurant & cafe", cat: "Chinese & Fast Food", oil: "MEDIUM", oilDesc: "Chowmein & Fried Snacks", phone: "", rating: "5.0", reviews: "1", addr: "Falta / Diamond Harbour Rd", zone: "Falta", url: "https://www.google.com/maps/place/Basmati+restaurant+%26+cafe" },
+      { id: 77, name: "Popular Food Court", cat: "Food Court / Multi-Vendor", oil: "HIGH", oilDesc: "Multi-Kitchen Frying Outlet", phone: "", rating: "2.9", reviews: "13", addr: "New Bus Stand, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Popular+Food+Court" },
+      { id: 78, name: "Hangout - Multi Cuisine Restaurant", cat: "Multi-Cuisine Restaurant", oil: "MEDIUM", oilDesc: "Regular Frying & Curries", phone: "", rating: "3.4", reviews: "36", addr: "55XQ+2XJ, NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hangout+-+Multi+Cuisine+Restaurant" },
+      { id: 79, name: "SRK CAFE & BEVERAGES", cat: "Fast Food & Snacks", oil: "MEDIUM", oilDesc: "Fried Snacks & Fast Food", phone: "", rating: "3.2", reviews: "45", addr: "Beside SD18 Bus Stand, Railway Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SRK+CAFE+%26+BEVERAGES" },
+      { id: 80, name: "Modak Food Centre", cat: "Snacks & Sweet Shop", oil: "HIGH", oilDesc: "Kachori / Frying Sweets", phone: "", rating: "-", reviews: "-", addr: "65XP+84H, 4, Sarisha Main Rd", zone: "Sarisha", url: "https://www.google.com/maps/place/Modak+Food+Centre" },
+      { id: 81, name: "Hotel Choynika", cat: "Indian Rice & Fish Hotel", oil: "HIGH", oilDesc: "High Turnover Frying", phone: "", rating: "4.1", reviews: "30", addr: "55WM+5G4, 89 Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hotel+Choynika" },
+      { id: 82, name: "Khan Fast Food", cat: "Fast Food", oil: "HIGH", oilDesc: "Roll / Chowmein Deep Frying", phone: "", rating: "-", reviews: "-", addr: "Falta SEZ Rd, near BDO Office", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Khan+Fast+Food" },
+      { id: 83, name: "Amantran resturant", cat: "Family Restaurant", oil: "MEDIUM", oilDesc: "Daily Kitchen Cooking", phone: "", rating: "5.0", reviews: "2", addr: "Dostipur, Diamond Harbour Rd", zone: "Dostipur / DH", url: "https://www.google.com/maps/place/Amantran+resturant" },
+      { id: 84, name: "Dalphin Hotel And Restuarant", cat: "Hotel & Restaurant", oil: "MEDIUM", oilDesc: "Basic Cooking / Frying", phone: "", rating: "2.0", reviews: "2", addr: "755W+XWW, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Dalphin+Hotel+And+Restuarant" },
+      { id: 85, name: "Chabir Hindu Hotel", cat: "Seafood & Bengali Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish Frying (Open till 2:30 AM)", phone: "", rating: "3.6", reviews: "125", addr: "76 Bus Stand, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Chabir+Hindu+Hotel" },
+      { id: 86, name: "Kichukhan owned by petuk", cat: "Family Restaurant", oil: "MEDIUM", oilDesc: "Multi-Cuisine Dining", phone: "", rating: "4.3", reviews: "22", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Kichukhan+owned+by+petuk" },
+      { id: 87, name: "Popi Kitchen Restaurant and Hotel", cat: "Bengali Traditional Village Food", oil: "HIGH", oilDesc: "Large Scale Village Frying/Curries", phone: "", rating: "3.4", reviews: "193", addr: "72XG+8GH, Riverside", zone: "Gadiyara / DH", url: "https://www.google.com/maps/place/Popi+Kitchen+Restaurant+and+Hotel" },
+      { id: 88, name: "Dolphin Restaurant", cat: "Fast Food Counter", oil: "HIGH", oilDesc: "Deep Frying (Snacks)", phone: "", rating: "1.6", reviews: "5", addr: "756W+2X2, Diamond Harbour Rd", zone: "Sarisha / DH", url: "https://www.google.com/maps/place/Dolphin+Restaurant" },
+      { id: 89, name: "Aahar Restaurant Cum Bar", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Kitchen & Frying Snacks", phone: "", rating: "4.5", reviews: "21", addr: "85WR+W3F, Bakra Hat Rd", zone: "Bakrahat", url: "https://www.google.com/maps/place/Aahar+Restaurant+Cum+Bar" },
+      { id: 90, name: "Imran Fast Food", cat: "Fast Food / Rolls / Cutlets", oil: "HIGH", oilDesc: "Fast Food Frying Station", phone: "", rating: "5.0", reviews: "6", addr: "Opposite Women College, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Imran+Fast+Food" },
+      { id: 91, name: "Hotel Misti Kumro", cat: "Bengali Rice Hotel", oil: "HIGH", oilDesc: "High Daily Cooking Volume", phone: "", rating: "4.6", reviews: "24", addr: "Anarnagar, Kukrahati - Haldia Rd", zone: "Kukrahati / DH Ferry", url: "https://www.google.com/maps/place/Hotel+Misti+Kumro" },
+      { id: 92, name: "Priyojon Cartarer & Fast Food", cat: "Fast Food & Catering", oil: "HIGH", oilDesc: "Catering Deep Frying", phone: "", rating: "4.5", reviews: "13", addr: "733V+4JQ", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Priyojon+Cartarer+%26+Fast+Food+Center" },
+      { id: 93, name: "Ramij Fast Food", cat: "Fast Food", oil: "HIGH", oilDesc: "Continuous Snacks Frying", phone: "", rating: "4.9", reviews: "7", addr: "Near Women College, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ramij+Fast+Food" },
+      { id: 94, name: "Aabar Khabo Restaurant (আবার খাবো)", cat: "Fast Food & Restaurant", oil: "HIGH", oilDesc: "Fast Food & Fry Station", phone: "", rating: "4.1", reviews: "10", addr: "Falta / Diamond Harbour", zone: "Falta", url: "https://www.google.com/maps/place/Aabar+Khabo+Restaurant" },
+      { id: 95, name: "Dak Banglow Restaurant", cat: "Chinese & Indian", oil: "MEDIUM", oilDesc: "Local Diner", phone: "", rating: "4.4", reviews: "21", addr: "36JW+464, Kulpi Station Rd", zone: "Kulpi", url: "https://www.google.com/maps/place/Dak+Banglow+Restaurant" },
+      { id: 96, name: "Cafe of Heaven", cat: "Cafe & Fast Food", oil: "MEDIUM", oilDesc: "Snacks & Shakes", phone: "", rating: "4.7", reviews: "3", addr: "Kulpi Rd", zone: "Kulpi", url: "https://www.google.com/maps/place/Cafe+of+Heaven" },
+      { id: 97, name: "SHOVAN DAR RESTAURANT CUM BAR", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Frying & Snacks", phone: "", rating: "5.0", reviews: "3", addr: "Redio Centre, Usthi Rd", zone: "Usthi", url: "https://www.google.com/maps/place/SHOVAN+DAR+RESTAURANT+CUM+BAR" },
+      { id: 98, name: "Mini Restaurant", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Daily Cooking", phone: "", rating: "4.8", reviews: "4", addr: "Kaikhali Bainchberia High School", zone: "Kaikhali", url: "https://www.google.com/maps/place/Mini+Restaurant" },
+      { id: 99, name: "Soumitra Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Local Diner", phone: "", rating: "4.5", reviews: "4", addr: "Nerta Ghoshpara More, Netra Rd", zone: "Netra", url: "https://www.google.com/maps/place/Soumitra+Restaurant" },
+      { id: 100, name: "RADHAKRISHNA DHABA", cat: "Bengali Dhaba", oil: "HIGH", oilDesc: "Highway Kitchen & Frying", phone: "", rating: "5.0", reviews: "1", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/RADHAKRISHNA+DHABA" },
+      { id: 101, name: "Komala Restodent", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Local Eatery", phone: "", rating: "5.0", reviews: "1", addr: "Usthi Road", zone: "Usthi", url: "https://www.google.com/maps/place/Komala+Restodent" },
+      { id: 102, name: "DISHA RESTAURANT CUM BAR", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Frying Snacks & Kitchen", phone: "", rating: "4.1", reviews: "44", addr: "Bazar, Padmapukur", zone: "Padmapukur / DH", url: "https://www.google.com/maps/place/DISHA+RESTAURANT+CUM+BAR" },
+      { id: 103, name: "V.I.P DHABA", cat: "Fast Food & Dhaba", oil: "HIGH", oilDesc: "Continuous Highway Frying", phone: "", rating: "4.6", reviews: "11", addr: "47V2+4PP, Paschim Raghunathpur Bottola", zone: "Kakdwip / DH", url: "https://www.google.com/maps/place/V.I.P+DHABA" },
+      { id: 104, name: "MOU DHABA", cat: "Highway Dhaba", oil: "HIGH", oilDesc: "Highway Eatery Frying", phone: "", rating: "5.0", reviews: "1", addr: "8743+RJR Mollar Thes Indian Oil Pump", zone: "Usthi / DH", url: "https://www.google.com/maps/place/MOU+DHABA" },
+      { id: 105, name: "Annapurna Hotel & Restaurant (Falta)", cat: "Indian Hotel & Restaurant", oil: "HIGH", oilDesc: "High Turnover Cooking", phone: "", rating: "3.7", reviews: "34", addr: "Falta / Diamond Harbour Rd", zone: "Falta", url: "https://www.google.com/maps/place/Annapurna+Hotel+%26+Restaurant" },
+      { id: 106, name: "Galaxy kitchen", cat: "Chinese & Multi-Cuisine", oil: "MEDIUM", oilDesc: "Regular Frying Outlet", phone: "", rating: "4.3", reviews: "3", addr: "Bishalaxmitala, Rania Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Galaxy+kitchen" },
+      { id: 107, name: "BEEF DARBAR", cat: "Beef & Biryani", oil: "HIGH", oilDesc: "Heavy Oil Usage", phone: "", rating: "3.0", reviews: "4", addr: "NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/BEEF+DARBAR" },
+      { id: 108, name: "Kanaklata Snacks & Restaurant", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Deep Frying (Puri/Singara)", phone: "", rating: "4.0", reviews: "18", addr: "Falta Rd", zone: "Falta", url: "https://www.google.com/maps/place/Kanaklata+Snacks+%26+Restaurant" },
+      { id: 109, name: "Dalchini restaurant", cat: "Multi-Cuisine", oil: "MEDIUM", oilDesc: "Regular Cooking", phone: "", rating: "3.7", reviews: "3", addr: "Falta Rd", zone: "Falta", url: "https://www.google.com/maps/place/Dalchini+restaurant" },
+      { id: 110, name: "A A RESTAURANT CUM BAR", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Frying Snacks & Kitchen", phone: "", rating: "3.5", reviews: "20", addr: "Bagaria Khargachi, Usthi Rd", zone: "Usthi", url: "https://www.google.com/maps/place/A+A+RESTAURANT+CUM+BAR" },
+      { id: 111, name: "New Kiran restaurant", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Basic Cooking", phone: "", rating: "3.3", reviews: "3", addr: "74MM+9WC", zone: "Falta", url: "https://www.google.com/maps/place/New+Kiran+restaurant" },
+      { id: 112, name: "Ma Lakshmi Hotel & Resturant", cat: "Hindu Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish/Curry Frying", phone: "", rating: "5.0", reviews: "1", addr: "87W9, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ma+Lakshmi+Hotel+%26+Resturant" },
+      { id: 113, name: "Ramkrishna Hotel And Restaurant (DH)", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Daily Cooking", phone: "", rating: "4.0", reviews: "1", addr: "Near SDO Bungalow, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ramkrishna+Hotel+And+Restaurant" },
+      { id: 114, name: "Rafiq Beef Halim Restaurant", cat: "Beef Halim & Mughlai", oil: "HIGH", oilDesc: "Heavy Frying & Gravies", phone: "", rating: "4.5", reviews: "8", addr: "Moshat - Gathura Rd", zone: "Moshat", url: "https://www.google.com/maps/place/Rafiq+Beef+Halim+Restaurant" },
+      { id: 115, name: "HIYAR MAJHE ECO VILLAGE RESTURANT", cat: "Resort & Eco Restaurant", oil: "MEDIUM", oilDesc: "Tourist Cooking", phone: "", rating: "4.3", reviews: "3", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/HIYAR+MAJHE+ECO+VILLAGE+RESTURANT" },
+      { id: 116, name: "The Orient", cat: "Oriental & Chinese", oil: "MEDIUM", oilDesc: "Resort Asian Dining", phone: "033 4040 4040", rating: "3.4", reviews: "11", addr: "Raichak on Ganges", zone: "Raichak", url: "https://www.google.com/maps/place/The+Orient" },
+      { id: 117, name: "FRIENDS RESTAURANT & CAFE", cat: "Restaurant & Cafe", oil: "MEDIUM", oilDesc: "Regular Fast Food Frying", phone: "", rating: "5.0", reviews: "2", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/FRIENDS+RESTAURANT+%26+CAFE" },
+      { id: 118, name: "বিরিয়ানি হাউস এন্ড হোটেল (Biryani House)", cat: "Biryani & Chicken", oil: "HIGH", oilDesc: "Ferry Ghat Heavy Frying", phone: "", rating: "5.0", reviews: "1", addr: "Ferry Terminal", zone: "Kukrahati / DH", url: "https://www.google.com/maps/place/Biryani+House" },
+      { id: 119, name: "Restaurants Of Heaven", cat: "Fast Food Counter", oil: "HIGH", oilDesc: "Deep Frying Snacks", phone: "", rating: "4.7", reviews: "51", addr: "Kharuberia Rd", zone: "Kharuberia", url: "https://www.google.com/maps/place/Restaurants+Of+Heaven" },
+      { id: 120, name: "Om Hotel", cat: "Dhaba & Rice Hotel", oil: "HIGH", oilDesc: "Daily Cooking & Frying", phone: "", rating: "3.5", reviews: "2", addr: "67G7+Cm3, 200, Netra Rd", zone: "Netra", url: "https://www.google.com/maps/place/Om+Hotel" },
+      { id: 121, name: "Aahar Hotel & Resturent", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Regular Cooking", phone: "", rating: "3.2", reviews: "5", addr: "Nainan Rd, near Bus Stand", zone: "Nainan", url: "https://www.google.com/maps/place/Aahar+Hotel+%26+Resturent" },
+      { id: 122, name: "Taniya Restaurant", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Roll & Cutlet Frying", phone: "", rating: "5.0", reviews: "2", addr: "Natra Bazar, Natra Station Rd", zone: "Netra", url: "https://www.google.com/maps/place/Taniya+Restaurant" },
+      { id: 123, name: "J.S Restaurant", cat: "Local Eatery", oil: "MEDIUM", oilDesc: "Basic Cooking", phone: "", rating: "-", reviews: "-", addr: "Near Bus Stop, Bakultala Rd", zone: "Bakultala", url: "https://www.google.com/maps/place/J.S+Restaurant" },
+      { id: 124, name: "Ganesh Restaurant", cat: "Indian Restaurant", oil: "HIGH", oilDesc: "Curry & Frying Outlet", phone: "", rating: "3.3", reviews: "8", addr: "87G8+7QW, NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ganesh+Restaurant" },
+      { id: 125, name: "Ganesh Restaurant's (Kulpi)", cat: "Indian Restaurant", oil: "MEDIUM", oilDesc: "Local Diner", phone: "", rating: "4.2", reviews: "19", addr: "Kulpi Rd", zone: "Kulpi", url: "https://www.google.com/maps/place/Ganesh+Restaurant's" },
+      { id: 126, name: "K K Hindu Hotel & Restaurant", cat: "Hindu Rice Hotel", oil: "HIGH", oilDesc: "High Turnover Fish/Curry Frying", phone: "", rating: "5.0", reviews: "2", addr: "Near 2 No Halt, Prativanagar, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/K+K+Hindu+Hotel+%26+Restaurant" },
+      { id: 127, name: "Suswadu Chicken Shop", cat: "Chicken Shop & Frying", oil: "HIGH", oilDesc: "Fresh Chicken Frying", phone: "", rating: "-", reviews: "-", addr: "Raichak Rd", zone: "Raichak", url: "https://www.google.com/maps/place/Suswadu+Chicken+Shop" },
+      { id: 128, name: "Tandoori Kitchen", cat: "Barbecue & Tandoor", oil: "HIGH", oilDesc: "Tandoor / Oil Basting & Frying", phone: "", rating: "5.0", reviews: "7", addr: "Kayaler More", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Tandoori+Kitchen" },
+      { id: 129, name: "Sujit Dhaba", cat: "Fast Food & Dhaba", oil: "HIGH", oilDesc: "Continuous Snack Frying", phone: "", rating: "5.0", reviews: "1", addr: "87W9, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Sujit+Dhaba" },
+      { id: 130, name: "Piyali Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Station Area Kitchen", phone: "", rating: "3.5", reviews: "4", addr: "7FJ3+4GF, Gocharan Station Rd", zone: "Gocharan", url: "https://www.google.com/maps/place/Piyali+Restaurant" },
+      { id: 131, name: "PANTHER BAR", cat: "Bar & Restaurant", oil: "MEDIUM", oilDesc: "Frying Snacks & Kitchen", phone: "", rating: "3.6", reviews: "41", addr: "56CP+5JR, Kakdwip Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/PANTHER+BAR" },
+      { id: 132, name: "THE VIEN CAFE", cat: "Cafe & Restaurant", oil: "MEDIUM", oilDesc: "Cafe Fry Items", phone: "", rating: "5.0", reviews: "2", addr: "Dalanghata More, Kakdwip Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/THE+VIEN+CAFE" },
+      { id: 133, name: "SONAR BANGLA NEW DHABA", cat: "Highway Dhaba", oil: "HIGH", oilDesc: "24 Hours Highway Dhaba", phone: "", rating: "4.0", reviews: "4", addr: "Bagaria, NH12, Kakdwip Rd", zone: "Bagaria / DH", url: "https://www.google.com/maps/place/SONAR+BANGLA+NEW+DHABA" },
+      { id: 134, name: "SOBER PIYO RESTAURANT", cat: "Restaurant & Drinks", oil: "MEDIUM", oilDesc: "Food & Snacks", phone: "", rating: "-", reviews: "-", addr: "Hatuganj Dr. Khana Mor, Kakdwip Rd", zone: "Hatuganj", url: "https://www.google.com/maps/place/SOBER+PIYO+RESTAURANT" },
+      { id: 135, name: "Mondal Fast Food", cat: "Fast Food", oil: "HIGH", oilDesc: "Rolls & Evening Frying", phone: "", rating: "4.4", reviews: "10", addr: "Bus Stand Road, beside Maa Kaali Tea", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Mondal+Fast+Food" },
+      { id: 136, name: "AFRIN HOTEL", cat: "Local Hotel & Restaurant", oil: "MEDIUM", oilDesc: "Daily Curries & Rice", phone: "", rating: "2.0", reviews: "1", addr: "Hatuganj More, NH-117", zone: "Hatuganj", url: "https://www.google.com/maps/place/AFRIN+HOTEL" },
+      { id: 137, name: "New Dhaba", cat: "Highway Dhaba", oil: "HIGH", oilDesc: "24 Hours Highway Kitchen", phone: "", rating: "4.0", reviews: "68", addr: "47R2+PJJ, NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/New+Dhaba" },
+      { id: 138, name: "ফুড corner (Food Corner)", cat: "Fast Food", oil: "HIGH", oilDesc: "Deep Frying (Pakoda/Chowmein)", phone: "", rating: "4.7", reviews: "3", addr: "Kulpi Rd", zone: "Kulpi", url: "https://www.google.com/maps/place/Food+Corner" },
+      { id: 139, name: "PROSEN TIFIN HOUSE", cat: "Fast Food & Tiffin", oil: "HIGH", oilDesc: "Daily Snack Frying", phone: "", rating: "-", reviews: "-", addr: "Kakdwip Road, near Nabagrah Mandir", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/PROSEN+TIFIN+HOUSE" },
+      { id: 140, name: "RAGIBUL TIFIN SHOP", cat: "Fast Food / Tiffin", oil: "HIGH", oilDesc: "Morning & Evening Frying", phone: "", rating: "5.0", reviews: "1", addr: "Market Station Road, near Basuldanga", zone: "Basuldanga", url: "https://www.google.com/maps/place/RAGIBUL+TIFIN+SHOP" },
+      { id: 141, name: "SUBHENDU RESTAURANT", cat: "Bus Stand Restaurant", oil: "MEDIUM", oilDesc: "High Footfall Eatery", phone: "", rating: "3.0", reviews: "2", addr: "Bus Stand, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SUBHENDU+RESTAURANT" },
+      { id: 142, name: "Hotel Ilish & Restaurant", cat: "Fish & Bengali Restaurant", oil: "HIGH", oilDesc: "Daily Ilish & Fish Frying", phone: "", rating: "4.0", reviews: "1", addr: "56F2+7FR, Maya Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hotel+Ilish+%26+Restaurant" },
+      { id: 143, name: "রাজ্যের পেটুক (Rajyer Petuk)", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Continuous Frying", phone: "", rating: "5.0", reviews: "25", addr: "XCWR+Q47", zone: "South 24 Pgs", url: "https://www.google.com/maps/place/Rajyer+Petuk" },
+      { id: 144, name: "Shib Sankar Hindu Hotel", cat: "Hindu Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish & Curry Frying", phone: "", rating: "3.0", reviews: "2", addr: "56G3+22G, Kakdwip Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Shib+Sankar+Hindu+Hotel" },
+      { id: 145, name: "BHASKAR RESTAURANT CUM HOTEL", cat: "Hotel & Restaurant", oil: "MEDIUM", oilDesc: "Highway Dining", phone: "", rating: "3.5", reviews: "2", addr: "S Shop, Usthi Rd, near Usthi", zone: "Usthi", url: "https://www.google.com/maps/place/BHASKAR+RESTAURANT+CUM+HOTEL" },
+      { id: 146, name: "RAJA BADSHA RESTAURANT", cat: "Fine Dining & Mughlai", oil: "HIGH", oilDesc: "Mughlai / Biryani / Tandoor", phone: "", rating: "3.2", reviews: "19", addr: "Usthi Rd", zone: "Usthi", url: "https://www.google.com/maps/place/RAJA+BADSHA+RESTAURANT" },
+      { id: 147, name: "TOWN DHABA AND RESTAURANT", cat: "Dhaba & Restaurant", oil: "HIGH", oilDesc: "Highway Dhaba Kitchen", phone: "", rating: "-", reviews: "-", addr: "Usthi Rd", zone: "Usthi", url: "https://www.google.com/maps/place/TOWN+DHABA+AND+RESTAURANT" },
+      { id: 148, name: "Ayubiya restaurant", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Daily Cooking", phone: "", rating: "-", reviews: "-", addr: "Beside Dava India Pharmacy", zone: "Netra", url: "https://www.google.com/maps/place/Ayubiya+restaurant" },
+      { id: 149, name: "Ananya Bhandar & Restaurant", cat: "Fast Food & Snacks", oil: "MEDIUM", oilDesc: "Local Snack Counter", phone: "", rating: "4.5", reviews: "30", addr: "Vill Bonomalipur, Lokhikantopur", zone: "Lakshmikantapur", url: "https://www.google.com/maps/place/Ananya+Bhandar+%26+Restaurant" },
+      { id: 150, name: "GHOSH RESTAURANT", cat: "Fast Food & Tea", oil: "HIGH", oilDesc: "Daily Snack / Pakoda Frying", phone: "", rating: "5.0", reviews: "1", addr: "More Post Office, Shyambasurchak, Kakdwip Rd", zone: "Shyambasurchak", url: "https://www.google.com/maps/place/GHOSH+RESTAURANT" },
+      { id: 151, name: "Bandha Restaurant", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Daily Meals", phone: "", rating: "4.9", reviews: "24", addr: "R8JJ+VGJ", zone: "Kakdwip", url: "https://www.google.com/maps/place/Bandha+Restaurant" },
+      { id: 152, name: "Lakshmi Narayan Restaurant", cat: "Local Restaurant", oil: "MEDIUM", oilDesc: "Village Kitchen", phone: "", rating: "-", reviews: "-", addr: "586C+4FM, Hatugange-Ramnathpur Rd", zone: "Hatuganj", url: "https://www.google.com/maps/place/Lakshmi+Narayan+Restaurant" },
+      { id: 153, name: "D Momo", cat: "Momo & Fast Food", oil: "MEDIUM", oilDesc: "Fried Momos & Rolls", phone: "", rating: "4.0", reviews: "1", addr: "Diamond Harbour Road", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/D+Momo" },
+      { id: 154, name: "Khai Khai Restaurant", cat: "Fast Food & Multi-Cuisine", oil: "HIGH", oilDesc: "High Volume Frying & Dining", phone: "", rating: "3.6", reviews: "109", addr: "486C+HCC, Baruipur - Kulpi Rd", zone: "Mandirbazar / Kulpi", url: "https://www.google.com/maps/place/Khai+Khai+Restaurant" },
+      { id: 155, name: "Kalkata Janapriya Restaurant", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Roll & Cutlet Frying", phone: "", rating: "-", reviews: "-", addr: "Radhanagar Rd, near Monarpur", zone: "Radhanagar", url: "https://www.google.com/maps/place/Kalkata+Janapriya+Restaurant" },
+      { id: 156, name: "MAA TARA TIFIN GHAR", cat: "Tiffin & Fast Food", oil: "HIGH", oilDesc: "Singara / Kochuri Frying", phone: "", rating: "1.0", reviews: "2", addr: "Kakdwip Road, near Kali Mandir Chaya Motors", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/MAA+TARA+TIFIN+GHAR" },
+      { id: 157, name: "CHANDER BARI CAFE AND RESTAURANT", cat: "Cafe & Restaurant", oil: "MEDIUM", oilDesc: "Highway Travel Dining", phone: "", rating: "3.8", reviews: "67", addr: "Canning / Basanti Highway", zone: "South 24 Pgs", url: "https://www.google.com/maps/place/CHANDER+BARI+CAFE+AND+RESTAURANT" },
+      { id: 158, name: "GOPAL VAR RESTAURANT", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Continuous Deep Frying", phone: "", rating: "-", reviews: "-", addr: "H Road, near Muktangan D", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/GOPAL+VAR+RESTAURANT" },
+      { id: 159, name: "Hotel Lokenath", cat: "Hindu Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish & Curry Frying", phone: "", rating: "3.2", reviews: "17", addr: "55GX+P6G, Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hotel+Lokenath" },
+      { id: 160, name: "TARA MAA TIFIN GHAR", cat: "Tiffin & Snacks", oil: "HIGH", oilDesc: "Kochuri / Snacks Frying", phone: "", rating: "-", reviews: "-", addr: "3Rastar Mor, Retnerswar Pur", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/TARA+MAA+TIFIN+GHAR" },
+      { id: 161, name: "N S CENTEEN", cat: "Fast Food / Station Canteen", oil: "HIGH", oilDesc: "High Footfall Station Frying", phone: "", rating: "5.0", reviews: "2", addr: "Rail Gate, Station Road, near Basuldanga", zone: "Basuldanga", url: "https://www.google.com/maps/place/N+S+CENTEEN" },
+      { id: 162, name: "GOPAL MISTRI", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "School Area Snack Frying", phone: "", rating: "-", reviews: "-", addr: "School Road, near Deria High School", zone: "Deria", url: "https://www.google.com/maps/place/GOPAL+MISTRI" },
+      { id: 163, name: "TARA MAA HOTEL AND RESTAURANT", cat: "Hotel & Restaurant", oil: "HIGH", oilDesc: "Market Area High Frying", phone: "", rating: "5.0", reviews: "3", addr: "Market, Kella Rd", zone: "Kella", url: "https://www.google.com/maps/place/TARA+MAA+HOTEL+AND+RESTAURANT" },
+      { id: 164, name: "Tapan Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Local Diner", phone: "", rating: "-", reviews: "-", addr: "Diamond Harbour Main Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Tapan+Restaurant" },
+      { id: 165, name: "Rina Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Highway Rice & Curry", phone: "", rating: "4.2", reviews: "10", addr: "55VQ+7VV, SH 1", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Rina+Restaurant" },
+      { id: 166, name: "Bidesh Swadesh Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Regular Cooking", phone: "", rating: "3.8", reviews: "16", addr: "C8GV+99H", zone: "Diamond Harbour Rd", url: "https://www.google.com/maps/place/Bidesh+Swadesh+Restaurant" },
+      { id: 167, name: "LAXMI NARAYAN MISTANNO BHANDAR", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Sweets / Singara / Kachori Frying", phone: "", rating: "5.0", reviews: "2", addr: "Raj Rampur Road", zone: "Raj Rampur", url: "https://www.google.com/maps/place/LAXMI+NARAYAN+MISTANNO+BHANDAR" },
+      { id: 168, name: "Babuji Hindu Hotel", cat: "Hindu Hotel & Rice", oil: "HIGH", oilDesc: "High Turnover Frying", phone: "", rating: "4.8", reviews: "9", addr: "NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Babuji+Hindu+Hotel" },
+      { id: 169, name: "Baithak resturant", cat: "Indian Restaurant", oil: "HIGH", oilDesc: "Curry & Frying Kitchen", phone: "", rating: "5.0", reviews: "2", addr: "55VQ+4PH", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Baithak+resturant" },
+      { id: 170, name: "The Momosapiens", cat: "Fast Food / Momos", oil: "MEDIUM", oilDesc: "Fried Momos & Rolls", phone: "", rating: "4.5", reviews: "4", addr: "NH 12, beside Sagarika Tourist Lodge", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/The+Momosapiens" },
+      { id: 171, name: "NANDITA FOOD COURT", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Deep Frying Stall", phone: "", rating: "4.8", reviews: "4", addr: "OF I LOVE Ground", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/NANDITA+FOOD+COURT" },
+      { id: 172, name: "Tarkari (Benfish)", cat: "Fish Fry & Meals", oil: "HIGH", oilDesc: "Fish Deep Frying", phone: "", rating: "1.9", reviews: "22", addr: "Near Ganga Riverfront", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Tarkari" },
+      { id: 173, name: "Abhar khabo", cat: "Bengali Restaurant", oil: "MEDIUM", oilDesc: "Regular Cooking", phone: "", rating: "2.0", reviews: "3", addr: "Near HPCL, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Abhar+khabo" },
+      { id: 174, name: "Subal Dar Canttin", cat: "Fast Food & Canteen", oil: "HIGH", oilDesc: "Continuous Snack Frying", phone: "", rating: "5.0", reviews: "2", addr: "DH Rd, near Police Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Subal+Dar+Canttin" },
+      { id: 175, name: "Bhola Chip Canteen", cat: "Canteen & Snacks", oil: "MEDIUM", oilDesc: "Snacks Frying", phone: "", rating: "4.6", reviews: "18", addr: "55VM+W9J", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Bhola+Chip+Canteen" },
+      { id: 176, name: "Keshab Hotel & Resturant", cat: "Rice Hotel & Restaurant", oil: "HIGH", oilDesc: "High Frying Volume (Open till 2 AM)", phone: "", rating: "-", reviews: "-", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Keshab+Hotel+%26+Resturant" },
+      { id: 177, name: "BRATHARS BREAK CORNER", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Deep Frying Snacks", phone: "", rating: "5.0", reviews: "1", addr: "Kallar More, DH Rd, near Rabindra Nagar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/BRATHARS+BREAK+CORNER" },
+      { id: 178, name: "Gandhi Hotel", cat: "Dhaba & Rice Hotel", oil: "HIGH", oilDesc: "High Frying Volume", phone: "", rating: "-", reviews: "-", addr: "21, DH Main Rd, opp. Police Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Gandhi+Hotel" },
+      { id: 179, name: "RANGILA HOTEL", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Roll & Cutlet Deep Frying", phone: "", rating: "5.0", reviews: "2", addr: "Kallar More, DH Rd, near Nagendra Bazar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/RANGILA+HOTEL" },
+      { id: 180, name: "The Real Chef Touch", cat: "Multi-Cuisine Restaurant", oil: "HIGH", oilDesc: "High Volume Cooking & Frying", phone: "", rating: "4.0", reviews: "37", addr: "55WQ+4FX, 89 Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/The+Real+Chef+Touch" },
+      { id: 181, name: "Pritam Mondal", cat: "Fast Food Counter", oil: "HIGH", oilDesc: "Deep Frying Station", phone: "", rating: "5.0", reviews: "4", addr: "Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Pritam+Mondal" },
+      { id: 182, name: "Fuchka Khazana", cat: "Street Food / Fuchka", oil: "MEDIUM", oilDesc: "Oil Frying (Puri/Papad)", phone: "", rating: "4.2", reviews: "27", addr: "DH Rd, near Jaminuddin Nursing Home", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Fuchka+Khazana" },
+      { id: 183, name: "Bong Na Bangali", cat: "Fast Food", oil: "HIGH", oilDesc: "Rolls & Cutlets Frying", phone: "", rating: "4.6", reviews: "7", addr: "DH Rd, near Station Bazar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Bong+Na+Bangali" },
+      { id: 184, name: "Mio Momo's", cat: "Fast Food & Momos", oil: "MEDIUM", oilDesc: "Fried Momos & Rolls", phone: "", rating: "3.6", reviews: "33", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Mio+Momo's" },
+      { id: 185, name: "Lebu Lonka", cat: "Fast Food & Rolls", oil: "HIGH", oilDesc: "Deep Frying (Rolls/Cutlets)", phone: "", rating: "3.8", reviews: "17", addr: "Opp. Joltank Rd, beside Gorui Jewellers", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Lebu+Lonka" },
+      { id: 186, name: "Diamond Hotel", cat: "Indian Rice Hotel", oil: "HIGH", oilDesc: "Daily Rice & Fish Meals", phone: "", rating: "2.5", reviews: "2", addr: "55RQ+7M3", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Diamond+Hotel" },
+      { id: 187, name: "Hotel 786", cat: "Mughlai & Fast Food", oil: "HIGH", oilDesc: "Meat Frying & Rolls", phone: "", rating: "3.4", reviews: "87", addr: "55VQ+6VJ", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hotel+786" },
+      { id: 188, name: "CHAMPA HATI", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Continuous Deep Frying", phone: "", rating: "-", reviews: "-", addr: "H Road, near Muktangan D", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/CHAMPA+HATI" },
+      { id: 189, name: "SUMANTA DAS", cat: "Fast Food", oil: "HIGH", oilDesc: "Evening Frying Counter", phone: "", rating: "-", reviews: "-", addr: "DH Rd, near Jetty Ghat", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SUMANTA+DAS" },
+      { id: 190, name: "Ma Tara Hindu Hotel", cat: "Hindu Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish & Curry Frying", phone: "", rating: "-", reviews: "-", addr: "76 Bus Stand", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ma+Tara+Hindu+Hotel" },
+      { id: 191, name: "Subham Shops", cat: "Tiffin & Breakfast", oil: "MEDIUM", oilDesc: "Kochuri & Snacks", phone: "", rating: "5.0", reviews: "1", addr: "DH Rd, near Kallar Math", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Subham+Shops" },
+      { id: 192, name: "SUROJIT FAST FOOD", cat: "Fast Food", oil: "HIGH", oilDesc: "Rolls & Cutlets Frying", phone: "", rating: "5.0", reviews: "1", addr: "Station Rd, near Toto Stand", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SUROJIT+FAST+FOOD" },
+      { id: 193, name: "SARKAR RESTAURANT", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Evening Frying", phone: "", rating: "-", reviews: "-", addr: "Opposite Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SARKAR+RESTAURANT" },
+      { id: 194, name: "MAA TARA TIFFIN GHAR", cat: "Tiffin & Fast Food", oil: "HIGH", oilDesc: "Singara / Kochuri", phone: "", rating: "-", reviews: "-", addr: "Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/MAA+TARA+TIFFIN+GHAR" },
+      { id: 195, name: "Nepal Tea Stall", cat: "Tea & Snacks", oil: "LOW", oilDesc: "Tea Stall", phone: "", rating: "4.3", reviews: "54", addr: "55WM+HMC", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Nepal+Tea+Stall" },
+      { id: 196, name: "Annapurna Restaurant (DH)", cat: "Family Restaurant", oil: "MEDIUM", oilDesc: "Regular Cooking", phone: "", rating: "3.6", reviews: "50", addr: "55PQ+MVM, NH 12", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Annapurna+Restaurant" },
+      { id: 197, name: "Hoichoi Resturant", cat: "Family Restaurant", oil: "MEDIUM", oilDesc: "Regular Meals", phone: "", rating: "3.5", reviews: "10", addr: "Main Rd, opp. State Bank of India", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hoichoi+Resturant" },
+      { id: 198, name: "Masi Mesor Hotel", cat: "Fast Food & Rice Hotel", oil: "HIGH", oilDesc: "Daily Rice & Fish Meals", phone: "", rating: "2.4", reviews: "9", addr: "55JV+652", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Masi+Mesor+Hotel" },
+      { id: 199, name: "SUDIPA SINGH", cat: "Fast Food", oil: "HIGH", oilDesc: "Street Frying Counter", phone: "", rating: "-", reviews: "-", addr: "DH Rd, near Kali Mandir", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SUDIPA+SINGH" },
+      { id: 200, name: "Tasty Fast Food Center", cat: "Fast Food", oil: "HIGH", oilDesc: "Frying Snacks", phone: "", rating: "1.0", reviews: "1", addr: "Diamond Harbour", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Tasty+Fast+Food+Center" },
+      { id: 201, name: "BYOB CHIPS CHAAT", cat: "Street Food & Chaat", oil: "MEDIUM", oilDesc: "Frying Chaat Items", phone: "", rating: "-", reviews: "-", addr: "55HV+W5P", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/BYOB+CHIPS+CHAAT" },
+      { id: 202, name: "DALI RAY", cat: "Fast Food", oil: "HIGH", oilDesc: "Evening Frying Counter", phone: "", rating: "-", reviews: "-", addr: "Near Ratneswarpur, opp. Dhup Ghar", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/DALI+RAY" },
+      { id: 203, name: "RAHUL BARIK", cat: "Fast Food", oil: "HIGH", oilDesc: "Roll / Cutlet Frying", phone: "", rating: "-", reviews: "-", addr: "H Road, near Jetty Ghat", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/RAHUL+BARIK" },
+      { id: 204, name: "Hamida Islamia Hotel", cat: "Mughlai & Rice Meals", oil: "HIGH", oilDesc: "Meat / Beef Frying", phone: "", rating: "-", reviews: "-", addr: "Near Bus Stand", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Hamida+Islamia+Hotel" },
+      { id: 205, name: "DIAMOND SPECIAL PAPDI CHAT", cat: "Chaat & Snacks", oil: "MEDIUM", oilDesc: "Papdi & Puri Frying", phone: "", rating: "-", reviews: "-", addr: "SDO Ground, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/DIAMOND+SPECIAL+PAPDI+CHAT" },
+      { id: 206, name: "Petuk Diamond Harbour", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Continuous Frying", phone: "", rating: "5.0", reviews: "1", addr: "SDO Ground", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Petuk+Diamond+Harbour" },
+      { id: 207, name: "The Chaat Bar", cat: "Chaat & Street Food", oil: "MEDIUM", oilDesc: "Fried Chaat Items", phone: "", rating: "4.7", reviews: "3", addr: "High School Road", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/The+Chaat+Bar" },
+      { id: 208, name: "Zestora kitchen", cat: "Cloud Kitchen / Fast Food", oil: "HIGH", oilDesc: "High Frying Delivery Kitchen", phone: "", rating: "5.0", reviews: "2", addr: "654H+CVR, Abdalpur Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Zestora+kitchen" },
+      { id: 209, name: "Sabar Se Swad", cat: "Fast Food", oil: "HIGH", oilDesc: "Rolls & Evening Frying", phone: "", rating: "5.0", reviews: "9", addr: "Near Super Speciality Hospital", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Sabar+Se+Swad" },
+      { id: 210, name: "Shib Sankar Misthanna Bhander 2", cat: "Sweets & Savouries", oil: "HIGH", oilDesc: "Sweets / Singara / Kachori Frying", phone: "", rating: "-", reviews: "-", addr: "Near Balaiponda Market", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Shib+Sankar+Misthanna+Bhander+2" },
+      { id: 211, name: "Ananya Restaurant", cat: "Restaurant", oil: "MEDIUM", oilDesc: "Daily Kitchen Cooking", phone: "", rating: "3.7", reviews: "3", addr: "55WR+W5M, Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Ananya+Restaurant" },
+      { id: 212, name: "Suman Restaurant", cat: "Fast Food", oil: "HIGH", oilDesc: "Rolls & Snacks", phone: "", rating: "-", reviews: "-", addr: "DH Rd, near Haoya Bata P O", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Suman+Restaurant" },
+      { id: 213, name: "JOL KHABAR", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "High Footfall Snack Frying", phone: "", rating: "-", reviews: "-", addr: "Natun Hospital More, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/JOL+KHABAR" },
+      { id: 214, name: "NASKAR CANTIN", cat: "Fast Food & Canteen", oil: "HIGH", oilDesc: "Canteen Deep Frying", phone: "", rating: "-", reviews: "-", addr: "Near TVS Showroom, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/NASKAR+CANTIN" },
+      { id: 215, name: "Mahaprabhu Hotel And Restaurant", cat: "Fast Food & Rice Hotel", oil: "HIGH", oilDesc: "Daily Fish & Curry Cooking", phone: "", rating: "-", reviews: "-", addr: "Hospital More, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Mahaprabhu+Hotel+And+Restaurant" },
+      { id: 216, name: "Jagannath Hotel And Resturent", cat: "Fast Food & Snacks", oil: "HIGH", oilDesc: "Roadside Frying", phone: "", rating: "1.0", reviews: "1", addr: "DH Rd, near KapatHat", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Jagannath+Hotel+And+Resturent" },
+      { id: 217, name: "JoyGuru Hotel & Restrurent", cat: "Multi-Cuisine Restaurant", oil: "MEDIUM", oilDesc: "Hospital Gate Dining", phone: "", rating: "4.5", reviews: "8", addr: "2 No. Gate, District Hospital", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/JoyGuru+Hotel+%26+Restrurent" },
+      { id: 218, name: "KITCHEN CORNER", cat: "Fast Food", oil: "HIGH", oilDesc: "Roll & Cutlet Frying", phone: "", rating: "-", reviews: "-", addr: "55WR+X4F, near Hospital More", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/KITCHEN+CORNER" },
+      { id: 219, name: "BAPI TIFIN STALL", cat: "Tiffin & Fast Food", oil: "HIGH", oilDesc: "Evening Frying (Moglai/Rolls)", phone: "", rating: "-", reviews: "-", addr: "DH Rd, near Kolkata Trends", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/BAPI+TIFIN+STALL" },
+      { id: 220, name: "PUSPASRI FAST FOOD", cat: "Fast Food", oil: "HIGH", oilDesc: "Frying Snacks & Rolls", phone: "", rating: "-", reviews: "-", addr: "Diamond Harbour Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/PUSPASRI+FAST+FOOD" },
+      { id: 221, name: "College canteen", cat: "Campus Canteen", oil: "HIGH", oilDesc: "High Volume Student Frying", phone: "", rating: "1.0", reviews: "1", addr: "College Campus", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/College+canteen" },
+      { id: 222, name: "Mallika Food Shop", cat: "College Area Food Shop", oil: "HIGH", oilDesc: "Chowmein & Frying Snacks", phone: "", rating: "-", reviews: "-", addr: "FC College", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Mallika+Food+Shop" },
+      { id: 223, name: "KUTUM BARI FAST FOOD & RESTAURANT", cat: "Fast Food & Restaurant", oil: "HIGH", oilDesc: "Cutlet / Roll / Mughlai Frying", phone: "", rating: "-", reviews: "-", addr: "Opp. Petrol Pump, near Hospital Gate", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/KUTUM+BARI+FAST+FOOD+%26+RESTAURANT" },
+      { id: 224, name: "Swarup Mondal", cat: "Fast Food", oil: "HIGH", oilDesc: "Village Snack Frying", phone: "", rating: "-", reviews: "-", addr: "Nutan Hat Roads", zone: "Nutan Hat", url: "https://www.google.com/maps/place/Swarup+Mondal" },
+      { id: 225, name: "Kartick Tiffin Stall", cat: "Tiffin & Snacks", oil: "HIGH", oilDesc: "Singara / Kochuri Frying", phone: "", rating: "5.0", reviews: "1", addr: "Near Railway Station", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/Kartick+Tiffin+Stall" },
+      { id: 226, name: "SOUVIK DAS", cat: "Restaurant & Snacks", oil: "MEDIUM", oilDesc: "Local Diner", phone: "", rating: "-", reviews: "-", addr: "Girls School, DH Rd", zone: "Diamond Harbour", url: "https://www.google.com/maps/place/SOUVIK+DAS" }
+    ];
+
+    let currentFilter = 'ALL';
+    let searchQuery = '';
+    let currentPage = 1;
+    const pageSize = 50;
+
+    function renderKPIs() {
+      const highCount = leads.filter(l => l.oil === 'HIGH').length;
+      const phoneCount = leads.filter(l => l.phone && l.phone.trim() !== '').length;
+      document.getElementById('kpi-total').innerText = leads.length;
+      document.getElementById('kpi-high').innerText = highCount;
+      document.getElementById('kpi-phone').innerText = phoneCount;
+    }
+
+    function getFilteredLeads() {
+      return leads.filter(item => {
+        let matchFilter = true;
+        if (currentFilter === 'HIGH') matchFilter = item.oil === 'HIGH';
+        else if (currentFilter === 'PHONE') matchFilter = Boolean(item.phone && item.phone.trim() !== '');
+        else if (currentFilter === 'DH') matchFilter = item.zone.toLowerCase().includes('diamond');
+        else if (currentFilter === 'SARISHA') matchFilter = item.zone.toLowerCase().includes('sarisha');
+        else if (currentFilter === 'RAICHAK') matchFilter = item.zone.toLowerCase().includes('raichak');
+
+        if (!matchFilter) return false;
+
+        if (searchQuery.trim() !== '') {
+          const q = searchQuery.toLowerCase();
+          const matchSearch =
+            item.name.toLowerCase().includes(q) ||
+            item.cat.toLowerCase().includes(q) ||
+            item.addr.toLowerCase().includes(q) ||
+            item.zone.toLowerCase().includes(q) ||
+            (item.phone && item.phone.toLowerCase().includes(q));
+          if (!matchSearch) return false;
+        }
+
+        return true;
+      });
+    }
+
+    function renderTable() {
+      const filtered = getFilteredLeads();
+      const total = filtered.length;
+      const totalPages = Math.ceil(total / pageSize) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const startIndex = (currentPage - 1) * pageSize;
+      const pageData = filtered.slice(startIndex, startIndex + pageSize);
+
+      const tbody = document.getElementById('leadsTableBody');
+      if (pageData.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9" style="text-align:center; padding: 40px; color: #94a3b8;">No business leads match your filter or search criteria.</td></tr>`;
+      } else {
+        tbody.innerHTML = pageData.map(item => {
+          let tagClass = 'tag-medium';
+          if (item.oil === 'HIGH') tagClass = 'tag-high';
+          else if (item.oil === 'LOW') tagClass = 'tag-low';
+
+          let phoneHtml = `<span class="phone-muted">Direct visit / Check Maps</span>`;
+          if (item.phone && item.phone.trim() !== '') {
+            const rawNumber = item.phone.split('/')[0].trim().replace(/[^0-9+]/g, '');
+            phoneHtml = `<a href="tel:${rawNumber}" class="phone-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              ${item.phone}
+            </a>`;
+          }
+
+          let ratingHtml = `<span style="color:#94a3b8; font-size:12px;">N/A</span>`;
+          if (item.rating !== '-' && item.rating !== '') {
+            ratingHtml = `<span class="rating-badge">★ ${item.rating}</span> <span style="font-size:11.5px; color:#64748b;">(${item.reviews})</span>`;
+          }
+
+          return `
+            <tr>
+              <td style="color:#94a3b8; font-weight:600; font-size:12px;">${item.id}</td>
+              <td>
+                <span class="biz-name">${item.name}</span>
+              </td>
+              <td><span style="font-weight:500;">${item.cat}</span></td>
+              <td>
+                <span class="tag ${tagClass}">${item.oil}</span>
+                <span style="display:block; font-size:11px; color:#64748b; margin-top:2px;">${item.oilDesc}</span>
+              </td>
+              <td class="phone-cell">${phoneHtml}</td>
+              <td>${ratingHtml}</td>
+              <td style="max-width:240px; color:#475569; font-size:12.5px;">${item.addr}</td>
+              <td><span class="area-badge">${item.zone}</span></td>
+              <td style="text-align: center;">
+                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="maps-btn">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  Maps
+                </a>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      const endDisplay = Math.min(startIndex + pageSize, total);
+      document.getElementById('pageInfo').innerText = total > 0 
+        ? `Showing ${startIndex + 1} to ${endDisplay} of ${total} entries`
+        : `Showing 0 entries`;
+      document.getElementById('btnPrev').disabled = currentPage <= 1;
+      document.getElementById('btnNext').disabled = currentPage >= totalPages;
+    }
+
+    function setFilter(filterType, element) {
+      currentFilter = filterType;
+      currentPage = 1;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+      renderTable();
+    }
+
+    function handleSearch() {
+      searchQuery = document.getElementById('searchInput').value;
+      currentPage = 1;
+      renderTable();
+    }
+
+    function changePage(direction) {
+      currentPage += direction;
+      renderTable();
+      window.scrollTo({ top: 320, behavior: 'smooth' });
+    }
+
+    function exportFilteredCSV() {
+      const dataToExport = getFilteredLeads();
+      const headers = ['ID', 'Business Name', 'Category / Cuisine', 'Oil Priority', 'Contact Number', 'Rating', 'Reviews', 'Address / Landmark', 'Zone', 'Google Maps Link'];
+      const rows = dataToExport.map(i => [
+        i.id,
+        `"${i.name.replace(/"/g, '""')}"`,
+        `"${i.cat.replace(/"/g, '""')}"`,
+        `"${i.oil} - ${i.oilDesc.replace(/"/g, '""')}"`,
+        `"${i.phone.replace(/"/g, '""')}"`,
+        i.rating,
+        `"${i.reviews}"`,
+        `"${i.addr.replace(/"/g, '""')}"`,
+        `"${i.zone.replace(/"/g, '""')}"`,
+        i.url
+      ]);
+      const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', `uco_leads_${currentFilter.toLowerCase()}_${new Date().toISOString().slice(0,10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Init
+    renderKPIs();
+    renderTable();
+  </script>
+</body>
+</html>
